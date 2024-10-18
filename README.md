@@ -1,5 +1,7 @@
 # Web-kurssin-lopputyo
 
+## Linkki: https://samulimv.github.io/Web-kurssin-lopputyo/
+
 # WEB-SOVELLUSTEN PERUSTEET: EVALUATION CRITERIA
 
 ## HTML Evaluation Criteria
