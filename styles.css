@@ -266,14 +266,10 @@ body.dark-theme .weather-box {
 }
 
 .clock {
-    font-size: 80px;
+    font-size: 100px;
     font-weight: bold;
     text-align: center;
-    background-color: #ffffff;
     font-family:'Courier New', Courier, monospace;
-    padding: 20px;
-    border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 body.dark-theme .clock {
@@ -388,11 +384,10 @@ input[type="checkbox"] {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    background-color: #333;
     color: white;
     border-radius: 8px;
     margin-top: 20px;
+    padding: 20px;
 }
 
 .footer-container p {
@@ -405,13 +400,14 @@ input[type="checkbox"] {
 }
 
 .github-logo {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
     transition: transform 0.3s;
+    align-items: center;
 }
 
 .github-logo:hover {
-    transform: scale(1.1);
+    transform: scale(1.4);
 }
 .about-id h1, .portfolio-id h1 {
     font-size: 24px;
@@ -422,4 +418,50 @@ input[type="checkbox"] {
 }
 .portfolio-id li {
     font-size: 20px;
+}
+
+.about-id, .portfolio-id {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.inner-box {
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    margin-top: 10px;
+}
+
+.inner-box p {
+    font-size: 18px;
+    color: #333;
+}
+
+.inner-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.inner-box li {
+    font-size: 18px;
+    color: #555;
+}
+
+.inner-box a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.inner-box a:hover {
+    text-decoration: underline;
+}
+
+.dark-theme .inner-box {
+    color: #000000;
+    background-color:#000000;
 }
