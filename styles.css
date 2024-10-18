@@ -1,9 +1,9 @@
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     background-color: #d4f4fd;
-    margin: 0;
-    font-size: 24px;
-    padding: 20px;
+    margin: 30;
+    font-size: 18px;
+    padding: 30px;
     color: #000000;
     transition: background-color 1s, color 1s;
     background-image: url('images/galaxy-3608029.jpg');
@@ -23,12 +23,10 @@ section, #nameSection, .quiz-section, .score-section {
 
 h1, h2 {
     color: #000000;
-    font-size: 22px;
 }
 
 p, ul {
     margin: 0;
-    font-size: 22px;
 }
 
 ul {
@@ -48,6 +46,7 @@ nav {
     background-color: #333;
     color: #fff;
     padding: 10px;
+    font-size: 26px;
 }
 
 nav ul {
@@ -187,6 +186,7 @@ button:hover {
     border-radius: 5px;
     background-color: white;
     text-align: center;
+    padding: 10px;
 }
 
 .gallery-item img {
@@ -253,12 +253,12 @@ button:hover {
 
 .weather-box h3 {
     margin-top: 0;
-    font-size: 18px;
+    font-size: 26px;
 }
 
 .weather-box p {
     margin: 8px 0;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 body.dark-theme .weather-box {
@@ -266,10 +266,11 @@ body.dark-theme .weather-box {
 }
 
 .clock {
-    font-size: 100px;
+    font-size: 80px;
     font-weight: bold;
     text-align: center;
     background-color: #ffffff;
+    font-family:'Courier New', Courier, monospace;
     padding: 20px;
     border-radius: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -411,4 +412,14 @@ input[type="checkbox"] {
 
 .github-logo:hover {
     transform: scale(1.1);
+}
+.about-id h1, .portfolio-id h1 {
+    font-size: 24px;
+}
+
+.about-id p, .portfolio-id p {
+    font-size: 20px;
+}
+.portfolio-id li {
+    font-size: 20px;
 }
