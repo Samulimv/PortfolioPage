@@ -9,10 +9,10 @@ This project effectively meets the HTML evaluation criteria across various aspec
 ### 1. Basic HTML Structure
 Basic HTML structure is present in all files, including essential elements like `<!DOCTYPE html>`, `<html>`, `<head>`, and `<body>`.
 - **Files**: 
-  - **index.html** (line 1)
-  - **contact.html** (line 1)
-  - **images.html** (line 1)
-  - **quiz.html** (line 1)
+  - **index.html** (line 1-)
+  - **contact.html** (line 1-)
+  - **images.html** (line 1-)
+  - **quiz.html** (line 1-)
 
 ### 2. Content Differentiation
 HTML structure with clear content differentiation is achieved through the use of headings (`<h1>`, `<h2>`), paragraphs (`<p>`), and lists (`<ul>`, `<li>`).
