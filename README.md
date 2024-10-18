@@ -40,6 +40,7 @@ Consistent use of semantic HTML throughout ensures better structure and understa
   - **contact.html** - usage of `<form>`, `<fieldset>`, and `<legend>`
 
 
+  
 ## CSS Evaluation Criteria
 
 This project effectively meets the CSS evaluation criteria across various aspects:
@@ -72,6 +73,7 @@ The styling demonstrates a solid understanding of layout principles, creating a 
 - **Examples**:
   - **styles.css** (lines 20-24) - consistent color palette and font choices
   - **styles.css** (lines 60-72) - hover effects and button styles that improve interaction
+
 
 
 # JavaScript Evaluation Criteria
@@ -107,6 +109,7 @@ Object-oriented principles are consistently applied throughout the code.
   - **quiz.js** (lines 2-4) - Object Usage
 
 
+
 # JavaScript Evaluation Criteria: Asynchronous Operations
 
 This project effectively meets the asynchronous operations evaluation criteria across various aspects:
@@ -114,28 +117,25 @@ This project effectively meets the asynchronous operations evaluation criteria a
 ### 1. Use of Timers
 The project includes the use of timers to manage delays and periodic updates.
 - **File**: 
-  - **home.js** (lines 25-27)
+  - **home.js** (lines 18-20) - Timer for Clock Updates
 
 ### 2. Successful Implementation of an AJAX Call or Fetch
-AJAX calls or Fetch API is implemented successfully to retrieve data from external sources.
+AJAX calls or the Fetch API are implemented successfully to retrieve data from external sources.
 - **Files**: 
-  - **home.js** (lines 3-6) - Fetch
-  - **home.js** (lines 12-20) - Fetch multiple cities
+  - **home.js** (lines 3-6) - Fetch Weather Data
+  - **home.js** (lines 10-22) - Fetch Multiple Cities
 
 ### 3. Data from the Asynchronous Call is Displayed on the Webpage
 Data retrieved from the asynchronous operations is effectively displayed on the webpage.
 - **File**: 
-  - **home.js** (lines 10-22) - Weather Data Display
+  - **home.js** (lines 10-22) - Weather Data Display for Cities
 
 ### 4. Error Handling is Implemented
 Error handling is implemented to manage failed API calls or unexpected errors gracefully.
 - **File**: 
-  - **home.js** (lines 7-10) - Error Handling in Fetch
+  - **home.js** (lines 7-10) - Error Handling in Fetch Calls
 
 ### 5. Effective Use of Asynchronous Data to Enhance User Experience
 Asynchronous data is used effectively to enhance user experience, such as filtering or sorting data dynamically.
 - **File**: 
-  - **quiz.js** (lines 35-50) - Dynamic Updates based on User Interaction
-
-
-
+  - **quiz.js** (lines 20-35) - Dynamic Updates based on User Interaction
