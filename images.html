@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery - Samuli Vaittinen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+    </nav>
+
+    <h1 style="color: white;">Image Gallery</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="images/sign-3724673_640.jpg" alt="Life Motto" onclick="openModal(this)">
+            <p>Life Motto</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/Näyttökuva 2024-10-15 153748.png" alt="Gaming highlight" onclick="openModal(this)">
+            <p>One of the highlights playing cs, got to play with the goat B1T</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/1729256615820.jpg" alt="1" onclick="openModal(this)">
+            <p>From Tirana, Albania</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/1729256616005.jpg" alt="2" onclick="openModal(this)">
+            <p>From Milano, Italy</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/1729256616069.jpg" alt="3" onclick="openModal(this)">
+            <p>From Bangkok, Thailand</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/1729256799525 (1).jpg" alt="4" onclick="openModal(this)">
+            <p>From Valletta, Malta</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/1729256883041.jpg" alt="5" onclick="openModal(this)">
+            <p>From Budva, Montenegro</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/1729256997605.jpg" alt="6" onclick="openModal(this)">
+            <p>From Phuket, Thailand</p>
+        </div>
+    </div>
+    
+    <div class="modal" id="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modal-img" src="" alt="Enlarged Image">
+    </div>
+
+    <script src="images.js"></script>

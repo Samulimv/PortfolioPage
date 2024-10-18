@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Samuli Vaittinen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+    </nav>
+    <br>
+
+    <section class="about-id">
+        <h1>About Me</h1>
+        <p>Hi, my name is Samuli Vaittinen. I'm a 24-year-old student from Oulu. I am currently pursuing a Bachelor's degree in Engineering, Information Technology at Oulu University of Applied Sciences, with a focus on software development.
+              This spring, I made the decision to specialize in software, and I haven’t regretted it — at least not yet! I really enjoy the flexibility of completing my studies independently from home.
+              In my free time, I stay active with various sports and have a passion for travel. One of my big life goals is to visit all 197 countries in the world — so far, I've been to 30!</p>
+    </section>
+    <br>
+    <section class="portfolio-id">
+        <h2>My Portfolio</h2>
+        <p>Here are some of the projects I have worked on:</p>
+        <ul>
+            <li><a href="https://github.com/Samulimv/mybankautomat_project">Project 1</a> - A bank-automat project, that simulates ATM functionalities. Programming languages used for this project were C, C++, and SQL.</li>
+            <li><a href="https://samulimv.github.io/">Project 2</a> - A portfolio type website written in XML.</li>
+        </ul>
+    </section>
+    <br>
+    <section class="weather-box-id" id="weather-section">
+        <h2>Current Weather</h2>
+        <div class="weather-container">
+            <div class="weather-box" id="helsinki-weather">
+                <h3>Helsinki</h3>
+                <p>Temperature: <span id="helsinki-temp">Loading...</span> °C</p>
+                <p>Condition: <span id="helsinki-condition">Loading...</span></p>
+            </div>
+            <div class="weather-box" id="tampere-weather">
+                <h3>Tampere</h3>
+                <p>Temperature: <span id="tampere-temp">Loading...</span> °C</p>
+                <p>Condition: <span id="tampere-condition">Loading...</span></p>
+            </div>
+            <div class="weather-box" id="oulu-weather">
+                <h3>Oulu</h3>
+                <p>Temperature: <span id="oulu-temp">Loading...</span> °C</p>
+                <p>Condition: <span id="oulu-condition">Loading...</span></p>
+            </div>
+            <div class="weather-box" id="rovaniemi-weather">
+                <h3>Rovaniemi</h3>
+                <p>Temperature: <span id="rovaniemi-temp">Loading...</span> °C</p>
+                <p>Condition: <span id="rovaniemi-condition">Loading...</span></p>
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <div class="clock" id="clock"></div>
+    <br>
+     
+    <button onclick="toggleTheme()">Toggle Theme</button>
+
+    <script src="home.js"></script>
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+        }
+    </script>
+<br>
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2024 Samuli Vaittinen</p>
+        <a href="https://github.com/Samulimv" target="_blank" class="github-link">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" class="github-logo">
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>

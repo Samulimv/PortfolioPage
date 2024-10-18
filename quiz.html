@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Capitals Quiz - Difficult Countries</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="images.html">Images</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+    </ul>
+</nav>
+<body>
+    <h1 style="color:white">World Capitals Quiz: Difficult Countries</h1>
+
+    <div id="nameSection">
+        <input type="text" id="name" placeholder="Enter your name">
+        <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div class="quiz-section" id="quizSection" style="display: none;">
+        <h2>Answer the following questions:</h2>
+
+        <div class="quiz-question">
+            <p>1. What is the capital of Namibia?</p>
+            <input type="radio" name="q1" value="0"> Luanda<br>
+            <input type="radio" name="q1" value="1"> Windhoek<br>
+            <input type="radio" name="q1" value="0"> Gaborone
+        </div>
+        <br>
+
+        <div class="quiz-question">
+            <p>2. What is the capital of Madagascar?</p>
+            <input type="radio" name="q2" value="1"> Antananarivo<br>
+            <input type="radio" name="q2" value="0"> Moroni<br>
+            <input type="radio" name="q2" value="0"> Libreville
+        </div>
+        <br>
+
+        <div class="quiz-question">
+            <p>3. What is the capital of Malawi?</p>
+            <input type="radio" name="q3" value="1"> Lilongwe<br>
+            <input type="radio" name="q3" value="0"> Blantyre<br>
+            <input type="radio" name="q3" value="0"> Harare
+        </div>
+        <br>
+
+        <div class="quiz-question">
+            <p>4. What is the capital of Burundi?</p>
+            <input type="radio" name="q4" value="0"> Kigali<br>
+            <input type="radio" name="q4" value="1"> Gitega<br>
+            <input type="radio" name="q4" value="0"> Bujumbura
+        </div>
+        <br>
+
+        <div class="quiz-question">
+            <p>5. What is the capital of Djibouti?</p>
+            <input type="radio" name="q5" value="1"> Djibouti<br>
+            <input type="radio" name="q5" value="0"> Addis Ababa<br>
+            <input type="radio" name="q5" value="0"> Mogadishu
+        </div>
+        <br>
+
+        <div class="quiz-question">
+            <p>6. What is the capital of Lesotho?</p>
+            <input type="radio" name="q6" value="1"> Maseru<br>
+            <input type="radio" name="q6" value="0"> Maputo<br>
+            <input type="radio" name="q6" value="0"> Lusaka
+        </div>
+        <br>
+
+        <div class="quiz-question">
+            <p>7. What is the capital of Bhutan?</p>
+            <input type="radio" name="q7" value="1"> Thimphu<br>
+            <input type="radio" name="q7" value="0"> Kathmandu<br>
+            <input type="radio" name="q7" value="0"> Dhaka
+        </div>
+        <br>
+
+        <div class="quiz-question">
+            <p>8. What is the capital of Papua New Guinea?</p>
+            <input type="radio" name="q8" value="1"> Port Moresby<br>
+            <input type="radio" name="q8" value="0"> Honiara<br>
+            <input type="radio" name="q8" value="0"> Apia
+        </div>
+        <br>
+
+        <div class="quiz-question">
+            <p>9. What is the capital of Solomon Islands?</p>
+            <input type="radio" name="q9" value="1"> Honiara<br>
+            <input type="radio" name="q9" value="0"> Port Vila<br>
+            <input type="radio" name="q9" value="0"> Suva
+        </div>
+        <br>
+
+        <div class="quiz-question">
+            <p>10. What is the capital of Eswatini (Swaziland)?</p>
+            <input type="radio" name="q10" value="1"> Mbabane<br>
+            <input type="radio" name="q10" value="0"> Manzini<br>
+            <input type="radio" name="q10" value="0"> Pretoria
+        </div>
+        <br>
+
+        <button onclick="submitQuiz()">Submit Answers</button>
+    </div>
+
+    <div class="score-section" id="scoreSection" style="display: none;">
+        <h2>High Scores</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody id="scoreTableBody">
+            </tbody>
+        </table>
+    </div>
+    <script src="quiz.js"></script>
