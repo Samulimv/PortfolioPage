@@ -7,10 +7,12 @@ body {
     color: #000000;
     transition: background-color 1s, color 1s;
     background-image: url('images/galaxy-3608029.jpg');
-    background-size: cover;  /* Ensures the image covers the viewport */
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;  /* Set height to 100% of viewport */
+    height: 100vh;
+    transform: scale(0.5); /* Scale the body to 50% */
+    transform-origin: top left; /* Set origin so scaling starts from the top left corner */
 }
 section, #nameSection, .quiz-section, .score-section {
     margin-bottom: 20px;
