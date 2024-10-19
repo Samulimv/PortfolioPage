@@ -3,7 +3,7 @@ body {
     background-color: #d4f4fd;
     margin: 0;
     font-size: 18px;
-    padding: 30px;
+    padding: 0px;
     color: #000000;
     transition: background-color 1s, color 1s;
     background-image: url('images/galaxy-3608029.jpg');
@@ -11,8 +11,12 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
-    transform: scale(0.5); /* Scale the body to 50% */
-    transform-origin: top left; /* Set origin so scaling starts from the top left corner */
+    transform: scale(0.9);
+    transform-origin: top left;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
 }
 
 section, #nameSection, .quiz-section, .score-section {
