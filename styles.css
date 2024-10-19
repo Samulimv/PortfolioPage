@@ -10,9 +10,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
-    transform: scale(0.8);
-    transform-origin: top left; /* Set origin so scaling starts from the top left corner */
+    height: 100vh; /* Tämä varmistaa, että korkeus on 100% näkymästä */
 }
 section, #nameSection, .quiz-section, .score-section {
     margin-bottom: 20px;
