@@ -1,31 +1,28 @@
-body {
+ body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #d4f4fd;
-    margin: 0;
     font-size: 18px;
-    padding: 30px;
     color: #000000;
     transition: background-color 1s, color 1s;
     background-image: url('images/galaxy-3608029.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
-    transform: scale(1,0); 
-    transform-origin: top left; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
 }
 
 section, #nameSection, .quiz-section, .score-section {
-    margin-bottom: 20px;
+    max-width: 1200px; 
+    width: 100%;
+    margin: 0 auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 1200px;
 }
 
 h1, h2 {
@@ -60,7 +57,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Flexbox to make the navigation responsive */
 }
 
 nav ul li {
