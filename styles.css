@@ -14,6 +14,7 @@ body {
     transform: scale(0.5); /* Scale the body to 50% */
     transform-origin: top left; /* Set origin so scaling starts from the top left corner */
 }
+
 section, #nameSection, .quiz-section, .score-section {
     margin-bottom: 20px;
     padding: 20px;
@@ -53,6 +54,8 @@ nav {
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Flexbox to make the navigation responsive */
 }
 
 nav ul li {
@@ -270,7 +273,7 @@ body.dark-theme .weather-box {
     font-size: 100px;
     font-weight: bold;
     text-align: center;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 body.dark-theme .clock {
@@ -383,6 +386,7 @@ input[type="checkbox"] {
 
 .footer-container {
     display: flex;
+    flex-direction: column; /* Responsiivinen muutettu */
     align-items: center;
     justify-content: center;
     color: white;
@@ -410,6 +414,7 @@ input[type="checkbox"] {
 .github-logo:hover {
     transform: scale(1.4);
 }
+
 .about-id h1, .portfolio-id h1 {
     font-size: 24px;
 }
@@ -417,6 +422,7 @@ input[type="checkbox"] {
 .about-id p, .portfolio-id p {
     font-size: 20px;
 }
+
 .portfolio-id li {
     font-size: 20px;
 }
@@ -464,5 +470,46 @@ input[type="checkbox"] {
 
 .dark-theme .inner-box {
     color: #000000;
-    background-color:#000000;
+    background-color: #000000;
+}
+
+/* Responsiivinen Flexbox-muotoilu */
+@media (max-width: 768px) {
+    .gallery-item {
+        flex-basis: calc(50% - 20px); /* 50% leveys pienemmille näytöille */
+    }
+
+    .weather-box {
+        width: 100%; /* Täysi leveys pienemmillä näytöillä */
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        flex-basis: calc(100% - 20px); /* Täysi leveys pienimmillä näytöillä */
+    }
+
+    .weather-container {
+        flex-direction: column; /* Yhden sarakkeen asettelu pienimmillä näytöillä */
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
 }
