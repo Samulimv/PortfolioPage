@@ -7,18 +7,26 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #d4f4fd;
     font-size: 18px;
-    padding: 30px;
     color: #000000;
     transition: background-color 1s, color 1s;
-    background-image: url('images/galaxy-3608029.jpg');
-    background-size: contain; /* tai contain, riippuen tarpeesta */
+    background-image: url('images/pexels-leefinvrede-3678799.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 100vh; /* varmistaa, että korkeus riittää */
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    padding: 30px;
+    flex: 1;
 }
 
 h1, h2 {
     color: #000000;
+    font-size: 2.5rem;
 }
 
 p, ul {
@@ -42,16 +50,18 @@ nav {
     background-color: #333;
     color: #fff;
     padding: 10px;
-    font-size: 26px;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
     margin-right: 15px;
 }
 
@@ -102,12 +112,20 @@ body.dark-theme .weather-box-id h2 {
 
 @media (max-width: 600px) {
     nav ul {
-        display: block;
+        flex-direction: column;
+        align-items: center;
     }
 
     nav ul li {
-        display: block;
         margin: 5px 0;
+    }
+
+    h1, h2 {
+        font-size: 1.8rem;
+    }
+
+    .clock {
+        font-size: 15vw;
     }
 }
 
@@ -262,7 +280,7 @@ body.dark-theme .weather-box {
 }
 
 .clock {
-    font-size: 100px;
+    font-size: 10vw;
     font-weight: bold;
     text-align: center;
     font-family:'Courier New', Courier, monospace;
@@ -346,33 +364,12 @@ input[type="checkbox"] {
     margin: 10px;
 }
 
-.contact-id {
+.contact-id, .survey-id, .feedback-container {
     max-width: 1400px;
     margin: 20px auto;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.contact-box {
-    padding: 15px;
-}
-
-.survey-id {
-    max-width: 1400px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.feedback-container {
-    max-width: 1400px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -405,6 +402,7 @@ input[type="checkbox"] {
 .github-logo:hover {
     transform: scale(1.4);
 }
+
 .about-id h1, .portfolio-id h1 {
     font-size: 24px;
 }
@@ -412,16 +410,9 @@ input[type="checkbox"] {
 .about-id p, .portfolio-id p {
     font-size: 20px;
 }
+
 .portfolio-id li {
     font-size: 20px;
-}
-
-.about-id, .portfolio-id {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
 }
 
 .inner-box {
@@ -459,10 +450,9 @@ input[type="checkbox"] {
 
 .dark-theme .inner-box {
     color: #000000;
-    background-color:#000000;
+    background-color: #000000;
 }
 
-/* Responsive Flexbox Adjustments */
 @media (max-width: 768px) {
     .feedback-container, .contact-id, .survey-id {
         padding: 15px;
@@ -482,4 +472,8 @@ input[type="checkbox"] {
     .gallery {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
+}
+
+.quiz-question {
+    background-color: #ffffff;
 }
