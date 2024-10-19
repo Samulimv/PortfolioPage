@@ -1,22 +1,24 @@
 body {
+    display: flex;
+    justify-content: center; /* Keskittää vaakasuunnassa */
+    align-items: center; /* Keskittää pystysuunnassa */
+    height: 100vh; /* Varmistaa, että kehon korkeus on 100% näkyvästä alueesta */
+    margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #d4f4fd;
-    margin: 0;
     font-size: 18px;
-    padding: 30px;
     color: #000000;
     transition: background-color 1s, color 1s;
     background-image: url('images/galaxy-3608029.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
-    transform: scale(1.0);
-    transform-origin: top left;
 }
 
 section, #nameSection, .quiz-section, .score-section {
-    margin-bottom: 20px;
+    max-width: 1200px; /* Maksimileveys */
+    width: 100%; /* Vie koko leveys pienemmillä näytöillä */
+    margin: 0 auto; /* Keskittää sisällön */
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
@@ -55,7 +57,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Flexbox to make the navigation responsive */
 }
 
 nav ul li {
@@ -386,7 +388,7 @@ input[type="checkbox"] {
 
 .footer-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Responsiivinen muutettu */
     align-items: center;
     justify-content: center;
     color: white;
@@ -473,13 +475,14 @@ input[type="checkbox"] {
     background-color: #000000;
 }
 
+/* Responsiivinen Flexbox-muotoilu */
 @media (max-width: 768px) {
     .gallery-item {
-        flex-basis: calc(50% - 20px);
+        flex-basis: calc(50% - 20px); /* 50% leveys pienemmille näytöille */
     }
 
     .weather-box {
-        width: 100%;
+        width: 100%; /* Täysi leveys pienemmillä näytöillä */
     }
 
     .footer-container {
@@ -495,11 +498,11 @@ input[type="checkbox"] {
 
 @media (max-width: 480px) {
     .gallery-item {
-        flex-basis: calc(100% - 20px);
+        flex-basis: calc(100% - 20px); /* Täysi leveys pienimmillä näytöillä */
     }
 
     .weather-container {
-        flex-direction: column;
+        flex-direction: column; /* Yhden sarakkeen asettelu pienimmillä näytöillä */
     }
 
     nav ul li {
