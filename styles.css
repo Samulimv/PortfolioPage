@@ -1,24 +1,22 @@
- body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #d4f4fd;
+    margin: 0;
     font-size: 18px;
+    padding: 30px;
     color: #000000;
     transition: background-color 1s, color 1s;
     background-image: url('images/galaxy-3608029.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: 100vh;
+    transform: scale(1.0);
+    transform-origin: top left;
 }
 
 section, #nameSection, .quiz-section, .score-section {
-    max-width: 1200px; 
-    width: 100%;
-    margin: 0 auto;
+    margin-bottom: 20px;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
@@ -57,7 +55,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     display: flex;
-    flex-wrap: wrap; /* Flexbox to make the navigation responsive */
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -388,7 +386,7 @@ input[type="checkbox"] {
 
 .footer-container {
     display: flex;
-    flex-direction: column; /* Responsiivinen muutettu */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
@@ -475,14 +473,13 @@ input[type="checkbox"] {
     background-color: #000000;
 }
 
-/* Responsiivinen Flexbox-muotoilu */
 @media (max-width: 768px) {
     .gallery-item {
-        flex-basis: calc(50% - 20px); /* 50% leveys pienemmille näytöille */
+        flex-basis: calc(50% - 20px);
     }
 
     .weather-box {
-        width: 100%; /* Täysi leveys pienemmillä näytöillä */
+        width: 100%;
     }
 
     .footer-container {
@@ -498,11 +495,11 @@ input[type="checkbox"] {
 
 @media (max-width: 480px) {
     .gallery-item {
-        flex-basis: calc(100% - 20px); /* Täysi leveys pienimmillä näytöillä */
+        flex-basis: calc(100% - 20px);
     }
 
     .weather-container {
-        flex-direction: column; /* Yhden sarakkeen asettelu pienimmillä näytöillä */
+        flex-direction: column;
     }
 
     nav ul li {
