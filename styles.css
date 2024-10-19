@@ -1,18 +1,17 @@
 body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #d4f4fd;
-    margin: 30;
+    margin: 0;
     font-size: 18px;
     padding: 30px;
     color: #000000;
     transition: background-color 1s, color 1s;
     background-image: url('images/galaxy-3608029.jpg');
-    background-size: cover;
+    background-size: cover;  /* Ensures the image covers the viewport */
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    height: 100vh;  /* Set height to 100% of viewport */
 }
-
 section, #nameSection, .quiz-section, .score-section {
     margin-bottom: 20px;
     padding: 20px;
