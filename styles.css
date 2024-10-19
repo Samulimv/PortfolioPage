@@ -1,22 +1,24 @@
 body {
+    display: flex;
+    justify-content: center; /* Keskittää vaakasuunnassa */
+    align-items: center; /* Keskittää pystysuunnassa */
+    height: 100vh; /* Varmistaa, että kehon korkeus on 100% näkyvästä alueesta */
+    margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #d4f4fd;
-    margin: 0;
     font-size: 18px;
-    padding: 30px;
     color: #000000;
     transition: background-color 1s, color 1s;
     background-image: url('images/galaxy-3608029.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
-    transform: scale(0.5); /* Scale the body to 50% */
-    transform-origin: top left; /* Set origin so scaling starts from the top left corner */
 }
 
 section, #nameSection, .quiz-section, .score-section {
-    margin-bottom: 20px;
+    max-width: 1200px; /* Maksimileveys */
+    width: 100%; /* Vie koko leveys pienemmillä näytöillä */
+    margin: 0 auto; /* Keskittää sisällön */
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
