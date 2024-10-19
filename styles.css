@@ -1,23 +1,20 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #d4f4fd;
-    margin: 0;
     font-size: 18px;
     padding: 30px;
     color: #000000;
     transition: background-color 1s, color 1s;
     background-image: url('images/galaxy-3608029.jpg');
-    background-size: cover;
+    background-size: contain; /* tai contain, riippuen tarpeesta */
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh; /* Tämä varmistaa, että korkeus on 100% näkymästä */
-}
-section, #nameSection, .quiz-section, .score-section {
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-height: 100vh; /* varmistaa, että korkeus riittää */
 }
 
 h1, h2 {
