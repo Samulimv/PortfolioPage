@@ -48,33 +48,35 @@ Consistent use of semantic HTML throughout ensures better structure and understa
 This project effectively meets the CSS evaluation criteria across various aspects:
 
 ### 1. Basic CSS Styling (Colors, Fonts)
-The project utilizes basic CSS properties effectively, focusing on colors and fonts to enhance readability and aesthetics.
+The project uses basic CSS properties effectively, focusing on colors, fonts, and background images to enhance readability and aesthetics.
 - **Files**:
-  - **styles.css** (lines 1-15)
+  - **styles.css** (lines 1-15) - general body styling with colors, fonts, background image.
 
 ### 2. Use of Classes and IDs to Style Specific Elements
-Classes and IDs are effectively employed to target specific elements within the project, enhancing maintainability and clarity.
+Classes and IDs are employed to target specific elements for styling, improving maintainability and clarity.
 - **Examples**:
-  - **styles.css** (lines 18-34) - styles for the navigation bar and sections
-  - **styles.css** (lines 55-71) - specific styles for the gallery and modal elements
+  - **styles.css** (lines 18-34) - styles for the navigation bar, links, and list items.
+  - **styles.css** (lines 45-71) - dark theme styles applied to the `nav`, `weather-box`, `about-id`, and `portfolio-id` sections.
 
 ### 3. Implementation of Responsive Design Elements
-The CSS implements responsive design techniques to ensure the website adapts well to different screen sizes and devices.
+The CSS implements responsive design techniques, ensuring the site adapts to different screen sizes using media queries and flexible layouts.
 - **Examples**:
-  - **styles.css** (lines 92-102) - media queries for mobile devices
-  - **styles.css** (lines 45-48) - Flexbox layout for navigation
+  - **styles.css** (lines 144-150) - media queries for screens smaller than 600px, adjusting font sizes and layout of navigation.
+  - **styles.css** (lines 314-326) - responsive adjustments for the gallery grid and weather section layout for mobile screens.
 
 ### 4. Use of Layouts for Advanced User Interfaces
-Advanced layout techniques are applied using CSS Grid and Flexbox, creating a responsive and organized design.
+Advanced layout techniques like Flexbox and CSS Grid are utilized to create a responsive, well-organized user interface.
 - **Examples**:
-  - **styles.css** (lines 74-86) - CSS Grid for the gallery layout
-  - **styles.css** (lines 49-52) - Flexbox for weather section layout
+  - **styles.css** (lines 49-52) - Flexbox layout for navigation.
+  - **styles.css** (lines 244-252) - CSS Grid for the gallery layout.
+  - **styles.css** (lines 279-288) - Flexbox layout for weather section.
 
 ### 5. Strong Grasp of Layout Principles, Aesthetics, and User Experience
-The styling demonstrates a solid understanding of layout principles, creating a visually appealing design that enhances user experience.
+The styling shows a strong understanding of layout principles, enhancing the user experience with clean design, responsiveness, and interactive elements.
 - **Examples**:
-  - **styles.css** (lines 20-24) - consistent color palette and font choices
-  - **styles.css** (lines 60-72) - hover effects and button styles that improve interaction
+  - **styles.css** (lines 20-24) - consistent color palette and font choices.
+  - **styles.css** (lines 60-72) - hover effects for gallery items and modal styles for interactive image display.
+  - **styles.css** (lines 49-52)** - Flexbox for efficient layout in the navigation bar.
 
 
 
