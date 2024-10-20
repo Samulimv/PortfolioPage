@@ -516,7 +516,6 @@ input[type="checkbox"] {
     background-color: #e7f3ff;
 }
 
-/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     .feedback-container {
         padding: 15px;
