@@ -15,14 +15,15 @@
     </ul>
 </nav>
 <body>
-    <h1 style="color:black">World Capitals Quiz: Difficult Countries</h1>
-
+    <h1 style="color:rgb(255, 101, 101); text-align: center;">World Capitals Quiz: Difficult Countries</h1>
+   
+<section style="padding: 20px;">
     <div id="nameSection">
         <input type="text" id="name" placeholder="Enter your name">
         <button onclick="startQuiz()">Start Quiz</button>
     </div>
 
-    <div class="quiz-section" id="quizSection" style="display: none;">
+    <div class="quiz-question" id="quizSection" style="display: none;">
         <h2>Answer the following questions:</h2>
 
         <div class="quiz-question">
@@ -107,7 +108,8 @@
 
         <button onclick="submitQuiz()">Submit Answers</button>
     </div>
-
+</section>
+<section>
     <div class="score-section" id="scoreSection" style="display: none;">
         <h2>High Scores</h2>
         <table>
@@ -122,3 +124,4 @@
         </table>
     </div>
     <script src="quiz.js"></script>
+</section>

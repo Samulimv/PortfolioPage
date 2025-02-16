@@ -188,7 +188,6 @@ button:hover {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 10px;
     padding: 20px;
-    color: black;
 }
 
 .gallery-item {
@@ -243,14 +242,19 @@ button:hover {
     text-align: center;
     border-radius: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 80%;   
+    align-self: center;
+    align-content: center;
+    padding: 20px;
 }
 
 .weather-container {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
     gap: 10px;
     flex-wrap: wrap;
+    padding-bottom: 20px;
+    align-self: center; 
 }
 
 .weather-box {
@@ -281,7 +285,7 @@ body.dark-theme .weather-box {
     font-size: 10vw;
     font-weight: bold;
     text-align: center;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 body.dark-theme .clock {
@@ -329,7 +333,10 @@ body.dark-theme .clock {
 
 .about-id, .portfolio-id {
     font-size: 18px;
+    width: 1000px;
+    max-height: fit-content;
     text-align: left;
+    align-self: center;
     padding: 20px;
     border-radius: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -363,7 +370,7 @@ input[type="checkbox"] {
 }
 
 .contact-id, .survey-id, .feedback-container {
-    max-width: 1400px;
+    width: 800px;
     margin: 20px auto;
     padding: 20px;
     background-color: #f9f9f9;
@@ -449,8 +456,8 @@ input[type="checkbox"] {
 }
 
 .dark-theme .inner-box {
-    color: #000000;
-    background-color: #000000;
+    color: #ffffff;
+    background-color: #333;
 }
 
 @media (max-width: 768px) {
@@ -476,6 +483,7 @@ input[type="checkbox"] {
 .quiz-question {
     background-color: #ffffff;
 }
+
 .feedback-container {
     max-width: 1400px;
     margin: 20px auto;
@@ -527,4 +535,3 @@ input[type="checkbox"] {
         font-size: 0.9rem;
     }
 }
-
