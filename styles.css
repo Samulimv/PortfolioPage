@@ -333,7 +333,7 @@ body.dark-theme .clock {
 
 .about-id, .portfolio-id {
     font-size: 18px;
-    width: 1000px;
+    max-width: 1000px;
     max-height: fit-content;
     text-align: left;
     align-self: center;
